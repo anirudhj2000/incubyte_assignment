@@ -18,7 +18,11 @@ export default function Home() {
           Incubyte TDD Assessment - Frontend - Anirudh Joshi
         </h1>
 
-        <a className="flex flex-row justify-center items-center mt-4 gap-x-2 bg-gray-200 px-2 py-1 rounded-lg ">
+        <a
+          href="https://github.com/anirudhj2000/incubyte_assignment"
+          target="_blank"
+          className="flex flex-row justify-center items-center mt-4 gap-x-2 bg-gray-200 px-2 py-1 rounded-lg "
+        >
           <div className=" w-4 h-4 relative">
             <Image
               src="/github-mark.png"
