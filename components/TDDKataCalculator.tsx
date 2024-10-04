@@ -22,7 +22,6 @@ function add(numbers: string): number {
         delim.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&")
       );
       delimiter = new RegExp(escapedDelimiters.join("|"));
-      console.log("delimiterx", delimiters, escapedDelimiters, delimiter);
     } else {
       delimiter = new RegExp(
         customDelimiter.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&")
@@ -31,7 +30,6 @@ function add(numbers: string): number {
 
     delimiter = new RegExp(delimiter.source + "|\n");
     numberString = numbers.substring(delimiterEndIndex + 4);
-    console.log("delimiter", delimiter, delimiterEndIndex);
   }
 
   numberString = numberString.replace(/\\n/g, "\n");
